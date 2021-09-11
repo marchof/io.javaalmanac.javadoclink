@@ -73,10 +73,11 @@ abstract class JavaDocLinkImpl implements JavaDocLink {
 	}
 
 	private String methodLink0(String modulename, String classname, String methodname, String params) {
-		return classLink(modulename, classname) + "#" + methodName(classname, methodname) + params;
+		var name = "<init>".equals(methodname) ? constructorName(classname) : methodname;
+		return classLink(modulename, classname) + "#" + name + params;
 	}
 
-	abstract String methodName(String owner, String internalname);
+	abstract String constructorName(String owner);
 
 	@Override
 	public String methodLink(String modulename, String classname, String methodname, String desc, boolean vararg) {
@@ -140,13 +141,9 @@ abstract class JavaDocLinkImpl implements JavaDocLink {
 		}
 
 		@Override
-		String methodName(String owner, String internalname) {
-			if ("<init>".equals(internalname)) {
-				var sep = owner.lastIndexOf('/');
-				return (sep == -1 ? owner : owner.substring(sep + 1)).replace('$', '.');
-			} else {
-				return internalname;
-			}
+		String constructorName(String owner) {
+			var sep = owner.lastIndexOf('/');
+			return (sep == -1 ? owner : owner.substring(sep + 1)).replace('$', '.');
 		}
 
 	}
@@ -178,13 +175,9 @@ abstract class JavaDocLinkImpl implements JavaDocLink {
 		}
 
 		@Override
-		String methodName(String owner, String internalname) {
-			if ("<init>".equals(internalname)) {
-				var sep = owner.lastIndexOf('/');
-				return (sep == -1 ? owner : owner.substring(sep + 1)).replace('$', '.');
-			} else {
-				return internalname;
-			}
+		String constructorName(String owner) {
+			var sep = owner.lastIndexOf('/');
+			return (sep == -1 ? owner : owner.substring(sep + 1)).replace('$', '.');
 		}
 	}
 
@@ -215,13 +208,9 @@ abstract class JavaDocLinkImpl implements JavaDocLink {
 		}
 
 		@Override
-		String methodName(String owner, String internalname) {
-			if ("<init>".equals(internalname)) {
-				var sep = Math.max(owner.lastIndexOf('/'), owner.lastIndexOf('$'));
-				return sep == -1 ? owner : owner.substring(sep + 1);
-			} else {
-				return internalname;
-			}
+		String constructorName(String owner) {
+			var sep = Math.max(owner.lastIndexOf('/'), owner.lastIndexOf('$'));
+			return sep == -1 ? owner : owner.substring(sep + 1);
 		}
 	}
 
@@ -252,13 +241,9 @@ abstract class JavaDocLinkImpl implements JavaDocLink {
 		}
 
 		@Override
-		String methodName(String owner, String internalname) {
-			if ("<init>".equals(internalname)) {
-				var sep = Math.max(owner.lastIndexOf('/'), owner.lastIndexOf('$'));
-				return sep == -1 ? owner : owner.substring(sep + 1);
-			} else {
-				return internalname;
-			}
+		String constructorName(String owner) {
+			var sep = Math.max(owner.lastIndexOf('/'), owner.lastIndexOf('$'));
+			return sep == -1 ? owner : owner.substring(sep + 1);
 		}
 	}
 
@@ -289,8 +274,8 @@ abstract class JavaDocLinkImpl implements JavaDocLink {
 		}
 
 		@Override
-		String methodName(String owner, String internalname) {
-			return "<init>".equals(internalname) ? "%3Cinit%3E" : internalname;
+		String constructorName(String owner) {
+			return "%3Cinit%3E";
 		}
 	}
 
@@ -321,8 +306,8 @@ abstract class JavaDocLinkImpl implements JavaDocLink {
 		}
 
 		@Override
-		String methodName(String owner, String internalname) {
-			return "<init>".equals(internalname) ? "%3Cinit%3E" : internalname;
+		String constructorName(String owner) {
+			return "%3Cinit%3E";
 		}
 	}
 
