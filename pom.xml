@@ -5,7 +5,7 @@
 	<groupId>io.javaalmanac</groupId>
 	<artifactId>javadoclink</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<name>io.javaalmanac.javadoclink</name>
 	<description>Generator for Javadoc deep links</description>
 	<url>https://github.com/marchof/io.javaalmanac.javadoclink</url>
@@ -13,6 +13,16 @@
 	<organization>
 		<name>Mountainminds GmbH Co. KG</name>
 	</organization>
+
+	<scm>
+		<connection>scm:git:git://github.com/marchof/io.javaalmanac.javadoclink.git</connection>
+		<developerConnection>scm:git:ssh://git@github.com:marchof/io.javaalmanac.javadoclink.git</developerConnection>
+		<url>https://github.com/marchof/three4j</url>
+	</scm>
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/marchof/io.javaalmanac.javadoclink/issues</url>
+	</issueManagement>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
