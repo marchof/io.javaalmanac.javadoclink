@@ -17,14 +17,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PrimitiveIterator;
 
-final class MethodParameters {
+final class MethodParameterStrategy {
 
 	private String begin;
 	private String separator;
 	private String end;
 	private String array;
 
-	MethodParameters(String begin, String separator, String end, String array) {
+	MethodParameterStrategy(String begin, String separator, String end, String array) {
 		this.begin = begin;
 		this.separator = separator;
 		this.end = end;

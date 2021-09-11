@@ -21,13 +21,13 @@ import java.util.Map;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class MethodParametersTest {
+public class MethodParameterStrategyTest {
 
-	private MethodParameters parameters;
+	private MethodParameterStrategy parameters;
 
 	@BeforeEach
 	public void setup() {
-		parameters = new MethodParameters("(", ",", ")", "[]");
+		parameters = new MethodParameterStrategy("(", ",", ")", "[]");
 	}
 
 	@Test
