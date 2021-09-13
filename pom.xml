@@ -4,14 +4,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.javaalmanac</groupId>
 	<artifactId>javadoclink</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 
 	<name>io.javaalmanac.javadoclink</name>
 	<description>Generator for Javadoc deep links</description>
 	<url>https://github.com/marchof/io.javaalmanac.javadoclink</url>
 	<inceptionYear>2021</inceptionYear>
 	<organization>
-		<name>Mountainminds GmbH Co. KG</name>
+		<name>Mountainminds GmbH &amp; Co. KG</name>
 	</organization>
 
 	<licenses>

@@ -12,8 +12,25 @@ The library can create links for
 * methods and constructors
 * fields
 
-based on the internal names (class files) or on Java reflection types. For example
-this snippet creates a link to the `String` class:
+based on the internal names (class files) or on Java reflection types.
+
+
+## Usage
+
+The latest version can be obtained with the following Maven dependency:
+
+```xml
+<dependency>
+    <groupId>io.javaalmanac</groupId>
+    <artifactId>javadoclink</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
+
+The only public interface of the library is `io.javaalmanac.javadoclink.JavaDocLink`. It
+is used to get instances, the base URL and retrieve links for different Java
+language elements. This For example this snippet creates a link to the
+`java.lang.String` class:
 
 ```java
 JavaDocLink.forVersion("11")
