@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (c) 2021 Mountainminds GmbH & Co. KG
+ * Copyright (c) 2022 Mountainminds GmbH & Co. KG
  * 
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -121,7 +121,7 @@ public abstract class JavaDocLinkTest {
 		JDK_API_DOC.put("15", "https://docs.oracle.com/en/java/javase/15/docs/api/");
 		JDK_API_DOC.put("16", "https://docs.oracle.com/en/java/javase/16/docs/api/");
 		JDK_API_DOC.put("17", "https://docs.oracle.com/en/java/javase/17/docs/api/");
-		JDK_API_DOC.put("18", "https://download.java.net/java/early_access/jdk18/docs/api/");
+		JDK_API_DOC.put("18", "https://docs.oracle.com/en/java/javase/18/docs/api/");
 		JDK_API_DOC.put("19", "https://download.java.net/java/early_access/jdk19/docs/api/");
 	}
 
