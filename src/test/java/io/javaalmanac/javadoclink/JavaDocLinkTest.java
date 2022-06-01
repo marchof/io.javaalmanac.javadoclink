@@ -50,7 +50,7 @@ public abstract class JavaDocLinkTest {
 	protected abstract String createLinkReflective(JavaDocLink jdl) throws Exception;
 
 	protected static Stream<Arguments> linksPerVersion(LinkSince... sincelist) {
-		Map<String, String> links = new LinkedHashMap<>();
+		var links = new LinkedHashMap<String, String>();
 		for (var sincelink : sincelist) {
 			String link = null;
 			for (var version : JavaDocLink.supportedVersions()) {
@@ -83,9 +83,9 @@ public abstract class JavaDocLinkTest {
 	@ParameterizedTest
 	@MethodSource("expectedLinks")
 	public void created_link_should_exist_in_actual_javadoc(String version, String expectedLink) throws Exception {
-		JavaDocLink jdl = JavaDocLink.forVersion(version).withBaseUrl(JDK_API_DOC.get(version));
+		var jdl = JavaDocLink.forVersion(version).withBaseUrl(JDK_API_DOC.get(version));
 		var urlstr = createLink(jdl);
-		Document doc = Jsoup.connect(urlstr).get();
+		var doc = Jsoup.connect(urlstr).get();
 		var ref = new URL(urlstr).getRef();
 		if (ref != null) {
 			ref = URLDecoder.decode(ref, StandardCharsets.US_ASCII);

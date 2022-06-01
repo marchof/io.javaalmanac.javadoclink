@@ -19,10 +19,10 @@ import java.util.PrimitiveIterator;
 
 final class MethodParameterStrategy {
 
-	private String begin;
-	private String separator;
-	private String end;
-	private String array;
+	private final String begin;
+	private final String separator;
+	private final String end;
+	private final String array;
 
 	MethodParameterStrategy(String begin, String separator, String end, String array) {
 		this.begin = begin;
@@ -73,7 +73,7 @@ final class MethodParameterStrategy {
 
 	String fromClasses(Class<?>[] params, boolean vararg) {
 		var result = new ArrayList<Param>();
-		for (Class<?> param : params) {
+		for (var param : params) {
 			result.add(fromClass(param));
 		}
 		return join(result, vararg);
