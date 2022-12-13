@@ -2,7 +2,7 @@ io.javaalmanac.javadoclink - Deep links for Javadoc
 ===================================================
 
 Small Java library to create deep links into generated Javadoc for all Java
-versions from 1.1 to 20.
+versions from 1.1 to 21.
 
 The library can create links for
 
@@ -23,7 +23,7 @@ The latest version can be obtained with the following Maven dependency:
 <dependency>
     <groupId>io.javaalmanac</groupId>
     <artifactId>javadoclink</artifactId>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
 </dependency>
 ```
 
