@@ -23,7 +23,7 @@ The latest version can be obtained with the following Maven dependency:
 <dependency>
     <groupId>io.javaalmanac</groupId>
     <artifactId>javadoclink</artifactId>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
 </dependency>
 ```
 
