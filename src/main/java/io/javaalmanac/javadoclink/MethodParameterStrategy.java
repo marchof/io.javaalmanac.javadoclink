@@ -93,7 +93,7 @@ final class MethodParameterStrategy {
 			if (idx > 0) {
 				sb.append(separator);
 			}
-			// vararg syntyx only applies for the last parameter:
+			// vararg syntax only applies for the last parameter:
 			sb.append(params.get(idx).toString(vararg && (idx == params.size() - 1)));
 		}
 		return sb.append(end).toString();
