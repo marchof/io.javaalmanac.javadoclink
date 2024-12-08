@@ -128,6 +128,7 @@ public abstract class JavaDocLinkTest {
 		JDK_API_DOC.put("22", "https://docs.oracle.com/en/java/javase/22/docs/api/");
 		JDK_API_DOC.put("23", "https://docs.oracle.com/en/java/javase/23/docs/api/");
 		JDK_API_DOC.put("24", "https://download.java.net/java/early_access/jdk24/docs/api/");
+		JDK_API_DOC.put("25", "https://download.java.net/java/early_access/jdk25/docs/api/");
 	}
 
 }
