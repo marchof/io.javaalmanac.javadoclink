@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>io.javaalmanac</groupId>
 	<artifactId>javadoclink</artifactId>
-	<version>1.7.1-SNAPSHOT</version>
+	<version>1.8.0</version>
 
 	<name>io.javaalmanac.javadoclink</name>
 	<description>Generator for Javadoc deep links</description>
