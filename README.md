@@ -2,7 +2,7 @@ io.javaalmanac.javadoclink - Deep links for Javadoc
 ===================================================
 
 Small Java library to create deep links into generated Javadoc for all Java
-versions from 1.1 to 26.
+versions from 1.1 to 27.
 
 The library can create links for
 

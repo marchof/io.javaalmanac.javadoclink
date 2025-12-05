@@ -89,6 +89,7 @@ final class JavaDocLinkImpl implements JavaDocLink {
 		VERSIONS.put("24", VERSIONS.get("11"));
 		VERSIONS.put("25", VERSIONS.get("11"));
 		VERSIONS.put("26", VERSIONS.get("11"));
+		VERSIONS.put("27", VERSIONS.get("11"));
 	}
 
 	private final String base;
