@@ -8,6 +8,9 @@ updates:
       maven-dependencies:
         patterns:
           - "*"
+    ignore:
+      - dependency-name: "org.junit.jupiter:junit-jupiter"
+        versions: [">= 6.0.0"]
 
   - package-ecosystem: "github-actions"
     directory: "/"
